@@ -1,0 +1,48 @@
+<html>
+<head>
+<title></title>
+<script src="/js/processing.min.js"></script>
+</head>
+<body>
+<script type="application/processing" data-processing-target="canvas1">
+
+states = {{states|tojson}};
+temp = {{tem|tojson}};
+hum = {{hum|tojson}};
+
+void setup() {
+    background(255);
+    size(950, 600);
+    f = createFont("Arial",16,true);
+    usa = loadShape("/static/Simple_US_Map.svg");
+    noLoop(); 
+    smooth();
+}
+
+void color_state(state,c) {
+    sh = usa.getChild(state);
+    sh.text(state,10,10);
+    fill(c);
+    noStroke();
+    shape(sh,0,0);
+} 
+
+void draw() {
+    shape(usa,0,0);
+    for (int i = 0; i < states.length; i++)
+    {
+      println(states[i]);
+      color_state(states[i],"white");
+ 
+    }
+  
+}
+
+</script>
+<br/>
+<hr/>
+
+<br/>
+<canvas id="canvas1"></canvas>
+</body>
+</html>

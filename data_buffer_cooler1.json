@@ -1,0 +1,12 @@
+{"_default": {"1": {"time": "00", "id": "COOLER1", "value": "11"},
+ "2": {"time": "01", "id": "COOLER1", "value": "14"}, 
+ "3": {"time": "02", "id": "COOLER1", "value": "11"},
+ "4": {"time": "03", "id": "COOLER1", "value": "09"},
+ "5": {"time": "04", "id": "COOLER1", "value": "08"},
+ "6": {"time": "05", "id": "COOLER1", "value": "08"}, 
+ "7": {"time": "06", "id": "COOLER1", "value": "08"},
+ "8": {"time": "07", "id": "COOLER1", "value": "07"}, 
+ "9": {"time": "08", "id": "COOLER1", "value": "12"}, 
+ "10": {"time": "09", "id": "COOLER1", "value": "11"},
+ "11": {"time": "10", "id": "COOLER1", "value": "11"},
+ "12": {"time": "11", "id": "COOLER1", "value": "12"}}}
